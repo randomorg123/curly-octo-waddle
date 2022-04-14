@@ -1,0 +1,23 @@
+name: "testaction3"
+description: "somedescription1"
+inputs:
+  scopes:
+    description: "somedescription2"
+    required: true
+  scopes-ignore:
+    description: "somedescription3"
+    required: false
+  wait:
+    description: "somedescription4"
+    required: false
+    default: true
+  skip-report:
+    description: "somedescription5"
+    required: false
+    default: false
+  report-name:
+    description: "somedescription6"
+    required: false
+runs:
+  using: "node12"
+  main: "lib/run.js"
